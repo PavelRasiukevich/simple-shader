@@ -33,7 +33,7 @@ public class ShaderController : MonoBehaviour
         rend.material.SetFloat("_CutoutThresh", 1);
         rend.material.SetFloat("_Amplitude", Random.Range(1.5f, 3.5f));
         rend.material.SetFloat("_Speed", Random.Range(3, 5));
-        yield return new WaitForSeconds(0.1f);
+        yield return glitchDuration;
         rend.material.SetFloat("_Amount", 0);
         rend.material.SetFloat("_CutoutThresh", 0);
     }
